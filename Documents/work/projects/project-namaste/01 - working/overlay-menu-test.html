@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="css/libs/normalize.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="header header-fixed-top">
+    <div class="header-contianer">
+      <div class="header-logo">
+        <a href="#">
+          <img src="imgs/logo.png" alt="" />
+        </a>
+      </div>
+      <ul class="header-nav-right">
+        <li><a href="#">Bag</a></li>
+        <li><!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">open</span></li>
+      </ul>
+    </div><!-- end header-container -->
+  </div><!-- end header -->
+
+  <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <ul>
+      <li><a href="#">Scarves and Wraps</a></li>
+      <li><a href="#">Men's Scarves</a></li>
+      <li><a href="#">Beanie Hats</a></li>
+      <li><a href="#">Natural Perfume</a></li>
+      <li><a href="#">Home Decor</a></li>
+      <li><a href="#">Jewellery</a></li>
+      <li><a href="#">See All</a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+
+  <script>
+  /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+  </script>
+</body>
+</html>
